@@ -1,0 +1,137 @@
+.quiz-game__end{
+  display:flex;
+  text-align:center;
+  flex-direction:column;
+  justify-content:center;
+  min-height: 100vh;
+}
+
+.quiz-game__end .star-score{
+  font-size: 3rem;
+}
+
+.quiz-game__end .quiz-game__button{
+  margin-top: 4rem;
+}
+
+.quiz-game__navigation{
+  display:flex;
+  justify-content:space-between;
+}
+
+.quiz-game__link{
+  color: inherit;
+  background:none;
+  border: none;
+  padding: none;
+  font-size: inherit;
+  font-weight: bold;
+  margin-block: 3em;
+  text-decoration: none;
+  display:flex;
+  align-items:center;
+  gap: .5em;
+}
+
+.quiz-game__link:hover{
+  text-decoration: underline;
+}
+
+.quiz-game__title{
+  font-size: 2.5rem;
+  margin-bottom: .5em;
+}
+
+.quiz-game__form{
+  max-width: 75%;
+  min-height: 100vh;
+  padding-block: 1.5625em 1.5625em;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+.quiz-game__field{
+  padding-block: 0.9375em;
+}
+
+.quiz-game__separator{
+  height: 1px;
+  background-color: #DBDEF0;
+  width: 100%;
+  border:none;
+  margin:0;
+}
+
+.quiz-game__question{
+  font-family: "Karla";
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: .9375em;
+  margin-top: 0;
+}
+
+.quiz-game__answers{
+  display:flex;
+  gap: .78125em;
+}
+
+.quiz-game__button{
+  display:block;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  font-size: .75rem;
+  border-radius: 1em;
+  border:none;
+  padding: 1em 2.1em;
+  margin-inline:auto;
+}
+
+.quiz-game__button:hover,
+.quiz-game__button:focus{
+  background-color: #424c81;
+}
+
+.quiz-game__bottom{
+  margin-top: 1.5em;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 1em;
+}
+
+.quiz-game__score{
+  display:flex;
+  align-items:center;
+  gap: 1rem;
+}
+
+.quiz-game__text-score{
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.quiz-game__bottom .star-score{
+  font-size: 1rem;
+}
+
+@media (min-width: 720px){
+  .quiz-game__form{
+    font-size: 1.5rem
+  }
+  .quiz-game__question{
+    font-size: 1.5rem;
+  }
+  .quiz-game__button{
+    font-size: 1rem;
+  }
+  .quiz-game__text-score{
+    font-size: 1.2rem;
+  }
+
+  .quiz-game__bottom .star-score{
+    font-size: 1.5rem;
+  }
+}

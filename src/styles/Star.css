@@ -1,0 +1,65 @@
+.star{
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  position:relative;
+  box-sizing: border-box;
+}
+
+.star__filling{
+  height: 1em;
+  width: 1em;
+  overflow:hidden;
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s linear;
+}
+
+.star__icon{
+  width: 1em;
+  color:orange;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.star__background-icon{
+  width: 1em;
+  position:absolute;
+  top: 0;
+  left: 0;
+  color:rgb(184, 181, 181);
+}
+
+.star--completed{
+  animation: shine 0.5s ease-out;
+}
+
+@keyframes jump {
+  50%{
+    transform: scale(1.25)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+    filter: drop-shadow(0 0 1px rgb(255, 166, 0))
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px rgb(255, 166, 0))
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+    filter: drop-shadow(0 0 1px rgb(255, 166, 0)) 
+  }
+}

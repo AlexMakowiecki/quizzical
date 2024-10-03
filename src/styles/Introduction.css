@@ -1,0 +1,105 @@
+.introduction{
+  text-align:center;
+  align-self:center;
+}
+
+.introduction__title{
+  font-family: "Karla";
+  font-size: 1.953125rem;
+  margin-bottom: 0;
+}
+
+.introduction__description{
+  font-size: 1rem;
+  font-family: "Inter";
+  margin-block: 0.4375em 1em;
+}
+
+.introduction__form{
+  display:flex;
+  flex-direction:column;
+  max-width: 19rem;
+}
+
+.introduction__more-options-button{
+  background:none;
+  border:none;
+  font-family: "Inter";
+  font-size: inherit;
+  color: inherit;
+  font-style:italic;
+  margin-right:auto;
+  font-weight: 500;
+}
+
+.introduction__more-options-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: .5rem;
+  padding-block: .75rem 1.25rem;
+}
+
+.form-field-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: .25rem;
+}
+
+
+.introduction__select{
+  background-color: #F5F7FB;
+  font-family: "Inter", sans-serif;
+  font-size: .75rem;
+  color:inherit;
+  padding: .25em .5em;
+  border-radius: 0.8em;
+  border: .79px solid #4D5B9E;
+  box-sizing: border-box;
+  text-align:center;
+  user-select: none;
+}
+
+.introduction__option{
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.introduction__start-button{
+  width:fit-content;
+  align-self:center;
+  font-size: 1rem;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  padding: 1em 3.6875em;
+  border-radius: 15px;
+  border:none;
+}
+
+.introduction__start-button:hover,
+.introduction__start-button:focus{
+  background-color: #424c81;
+}
+
+@media (min-width: 720px){
+  .introduction__title{
+    font-size: 3rem;
+  }
+
+  .introduction__description{
+    font-size: 1.5rem;
+  }
+
+  .introduction__start-button{
+    font-size: 1.5rem;
+  }
+
+  .introduction__select{
+    font-size: 1rem;
+  }
+}
+
+
+
