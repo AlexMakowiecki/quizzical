@@ -15,7 +15,7 @@ export default function App() {
       <div className="blob-background">
         <img className="blob blob-one" src={blob1}></img>
         <img className="blob blob-two" src={blob2}></img>
-      </div>
+      </div> 
       { quizOptions
         ? <QuizGame quizOptions={quizOptions}/> 
         : <Introduction setQuizOptions={setQuizOptions}/> }

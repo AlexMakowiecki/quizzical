@@ -151,7 +151,7 @@ export default function QuizGame({quizOptions}){
                       <StarScore starQuantity={5} scoreRatio={cantCorrectAnswers/questionsData.length}/>
                       <p className="quiz-game__text-score">{`${cantCorrectAnswers}/${questionsData.length} correct answers`}</p>
                     </div>
-                    <button type="button" className="quiz-game__button" onClick={handleNextButton}>Next</button>
+                    <button type="button" className="quiz-game__button quiz-game__next-button" onClick={handleNextButton}>Next</button>
                   </>
                 : <button className="quiz-game__button">Check Answers</button>
               }
